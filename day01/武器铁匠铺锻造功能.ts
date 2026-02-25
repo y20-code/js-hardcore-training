@@ -1,4 +1,11 @@
-const forgeSystem = {
+interface ForgeSystem{
+    smithName:string;
+    shopLevel:number;
+    upgradeWeapon:(atack:number,cost?:number,...energy:number[]) => {finalAttack:number,cost:number};
+    broadcastAd: () => void;
+}
+
+const forgeSystem:ForgeSystem = {
     smithName:"欧冶子",
     shopLevel:1,
     upgradeWeapon:function(atack:number,cost=50,...energy:number[]){
