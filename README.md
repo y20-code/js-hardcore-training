@@ -20,5 +20,7 @@
 
 * **[05-装备背包系统 (React + Zustand Inventory)](./src/05-react-zustand-inventory/)**
   * **修炼点**：Zustand Store 剥离、跨组件通信、React 组件层级拆分、UI 与数据逻辑解耦。
+* **[06-冒险者任务大厅 (React Quest Board)](./src/06-react-quest-board/)**
+  * **修炼点**：Zustand 仓库提取、`useState` 双向绑定、`useEffect` 模拟生命周期与网络请求、父子组件 `props` 传值与 `React.memo` 性能优化、数组 `map` 列表渲染与 `filter` 衍生计算。
 ---
 *持续更新中...*
