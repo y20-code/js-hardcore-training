@@ -22,5 +22,7 @@
   * **修炼点**：Zustand Store 剥离、跨组件通信、React 组件层级拆分、UI 与数据逻辑解耦。
 * **[06-冒险者任务大厅 (React Quest Board)](./src/06-react-quest-board/)**
   * **修炼点**：Zustand 仓库提取、`useState` 双向绑定、`useEffect` 模拟生命周期与网络请求、父子组件 `props` 传值与 `React.memo` 性能优化、数组 `map` 列表渲染与 `filter` 衍生计算。
+* **[07-铁匠铺图纸商店 (Blacksmith Shop)](./src/07-react-blacksmith-shop/)**
+  * **修炼点**：Zustand 稳定引用 (Stable Reference) 配合 `React.memo` 精准拦截多余渲染、全局状态与局部 `useState` 的严格边界隔离、`useEffect` 异步数据加载与边界值 Bug 规避、基于过滤条件的衍生计算 (Derived State)。
 ---
 *持续更新中...*
