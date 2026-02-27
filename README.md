@@ -26,5 +26,7 @@
   * **修炼点**：Zustand 稳定引用 (Stable Reference) 配合 `React.memo` 精准拦截多余渲染、全局状态与局部 `useState` 的严格边界隔离、`useEffect` 异步数据加载与边界值 Bug 规避、基于过滤条件的衍生计算 (Derived State)。
 * **[08-怪物图鉴大厅 (Bestiary Hall)](./src/08-react-axios-bestiary/)**
   * **修炼点**：Axios 底层实例封装与拦截器 (Interceptors) 核心脱壳机制、API 请求层与 UI 视图层的绝对解耦设计、RESTful 规范下的 `params` (URL参数) 与 `data` (请求体) 严格区分、React 异步数据流闭环 (`useEffect` 配合 `try...catch...finally` 防御性编程)、TypeScript 泛型注入规避 `never[]` 陷阱与 `AxiosResponse` 类型重写、基于 Early Return (提前返回) 的 Loading/Error UI 降级策略。
+* **[09-装备锻造台 (Forge System)](./src/09-react-axios-forge/)**
+  * **修炼点**：基于后端 API 契约的 TypeScript 接口逆向工程 (Interface 推导)、Axios 泛型 (`<T, R>`) 深度注入以实现端到端的 100% 类型安全 (Type-Safe)、API 层类型导出与 UI 层导入复用的高内聚架构设计、复杂嵌套响应结构 (`{ total, list }`) 的按需解构与状态精准映射、React `useEffect` 依赖数组 (`[]`) 闭环与无限渲染 (Infinite Loop) 死锁规避、JSX 列表渲染 (`map` + `return`) 的作用域陷阱排雷。
 ---
 *持续更新中...*
