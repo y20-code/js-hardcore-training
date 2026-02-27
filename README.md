@@ -30,5 +30,7 @@
   * **修炼点**：基于后端 API 契约的 TypeScript 接口逆向工程 (Interface 推导)、Axios 泛型 (`<T, R>`) 深度注入以实现端到端的 100% 类型安全 (Type-Safe)、API 层类型导出与 UI 层导入复用的高内聚架构设计、复杂嵌套响应结构 (`{ total, list }`) 的按需解构与状态精准映射、React `useEffect` 依赖数组 (`[]`) 闭环与无限渲染 (Infinite Loop) 死锁规避、JSX 列表渲染 (`map` + `return`) 的作用域陷阱排雷。
 * **[10-勇者排行榜 (Leaderboard)](./src/10-react-query-leaderboard/)**
   * **修炼点**：彻底分离前端“服务端状态 (Server State)”与“客户端状态 (Client State)”的架构思维、基于 `@tanstack/react-query` 的全局缓存调度中心 (`QueryClientProvider`) 搭建、使用 `useQuery` 替代 `useState` + `useEffect` 实现声明式数据拉取与 UI 防御闭环、深度解析 `queryKey` 缓存条形码机制与 `queryFn` 进货函数的底层映射、彻底告别手动维护 Loading/Error 状态的大厂极简数据流架构。
+* **[11-冒险者档案局 (Profile Bureau)](./src/11-react-query-profile/)**
+  * **修炼点**：突破标准 JSON 请求模板，实战基于 `FormData` 的二进制文件流组装与 `multipart/form-data` 请求头重写；深度挖掘 Axios 高级配置，挂载 `onUploadProgress` 拦截底层物理进度并映射至 React 局部 `useState` 实现真实进度条；掌握原生 DOM (`e.target.files[0]`) 与框架数据流的桥接技巧；利用 React Query 的 `useMutation` 处理非幂等操作 (POST)，并结合 `queryClient.invalidateQueries` 实现上传成功后的缓存强制失效与自动静默刷新，彻底打通“本地读取 -> 物理上传 -> 进度映射 -> 缓存作废 -> UI 无感更新”的大厂复杂交互全链路。
 ---
 *持续更新中...*
