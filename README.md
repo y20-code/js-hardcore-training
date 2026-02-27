@@ -24,5 +24,7 @@
   * **修炼点**：Zustand 仓库提取、`useState` 双向绑定、`useEffect` 模拟生命周期与网络请求、父子组件 `props` 传值与 `React.memo` 性能优化、数组 `map` 列表渲染与 `filter` 衍生计算。
 * **[07-铁匠铺图纸商店 (Blacksmith Shop)](./src/07-react-blacksmith-shop/)**
   * **修炼点**：Zustand 稳定引用 (Stable Reference) 配合 `React.memo` 精准拦截多余渲染、全局状态与局部 `useState` 的严格边界隔离、`useEffect` 异步数据加载与边界值 Bug 规避、基于过滤条件的衍生计算 (Derived State)。
+* **[08-怪物图鉴大厅 (Bestiary Hall)](./src/08-react-axios-bestiary/)**
+  * **修炼点**：Axios 底层实例封装与拦截器 (Interceptors) 核心脱壳机制、API 请求层与 UI 视图层的绝对解耦设计、RESTful 规范下的 `params` (URL参数) 与 `data` (请求体) 严格区分、React 异步数据流闭环 (`useEffect` 配合 `try...catch...finally` 防御性编程)、TypeScript 泛型注入规避 `never[]` 陷阱与 `AxiosResponse` 类型重写、基于 Early Return (提前返回) 的 Loading/Error UI 降级策略。
 ---
 *持续更新中...*
